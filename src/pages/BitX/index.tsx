@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './bitx.scss';
 import bgVector from '../../assets/img/bgVector.png';
 import down from '../../assets/img/down.png';
