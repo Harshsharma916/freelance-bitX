@@ -6,21 +6,21 @@ import Home from './pages/Home';
 import Transaction from './pages/Transaction';
 
 export const routeNames = {
-  home: '/',
+  // home: '/',
   dashboard: '/dashboard',
   transaction: '/transaction',
   unlock: '/unlock',
   ledger: '/ledger',
   walletconnect: '/walletconnect',
-  bitXcard: '/bitXcard'
+  bitXcard: '/'
 };
 
 const routes: Array<any> = [
-  {
-    path: routeNames.home,
-    title: 'Home',
-    component: Home
-  },
+  // {
+  //   path: routeNames.home,
+  //   title: 'Home',
+  //   component: Home
+  // },
   {
     path: routeNames.dashboard,
     title: 'Dashboard',

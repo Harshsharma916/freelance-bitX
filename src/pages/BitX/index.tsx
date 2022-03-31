@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './bitx.scss';
 import bgVector from '../../assets/img/bgVector.png';
 import down from '../../assets/img/down.png';
@@ -7,8 +7,13 @@ import zImg from '../../assets/img/zImg.png';
 import dollarPot from '../../assets/img/dollarPot.png';
 import stake_reward_bg from '../../assets/img/stake_reward_bg.png';
 import arrow from '../../assets/img/arrow.png';
+// import { ModalCard } from './Modal';
 
 const BitXCard = () => {
+  const [showModal, setshowModal] = useState(false);
+  const [showStake, setShowStake] = useState(false);
+  const [showUnstake, setShowUnstake] = useState(false);
+
   const data = [
     {
       name: 'APY',
@@ -25,7 +30,7 @@ const BitXCard = () => {
   ];
 
   return (
-    <div className='wrapper'>
+    <div className='bitxwrapper'>
       <img src={bgVector} className='bgVector' />
       <div className='container'>
         <div className='card'>
@@ -120,11 +125,11 @@ const BitXCard = () => {
             </div>
           </div>
           <div className='buttonDiv'>
-            <div className='stake_button'>
+            <div className='stake_button' onClick={() => setShowStake((prev) => !prev)}>
               <p>Stake</p>
               <img src={down} />
             </div>
-            <div className='unstake_button'>
+            <div className='unstake_button' onClick={() => setShowUnstake((prev) => !prev)}>
               <p>Unstake</p>
               <img src={up} />
             </div>
@@ -135,7 +140,7 @@ const BitXCard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>    
   );
 };
 
