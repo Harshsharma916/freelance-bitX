@@ -17,7 +17,6 @@
 }
 
 @media (min-width: 1000px) {
-
   .container {
     display: flex;
     gap: 50px;
@@ -28,6 +27,9 @@
   }
   .stake_earn img {
     width: 50px;
+  }
+  .modalcard {
+    width: 500px;
   }
 }
 
@@ -48,6 +50,14 @@
   .stake_earn img {
     width: 30px;
   }
+
+  .modalcard {
+    width: 380px;
+  }
+}
+
+.container {
+  position: relative;
 }
 
 .card {
@@ -233,5 +243,23 @@
 
   img {
     width: 25px;
+  }
+}
+
+.modalcard {
+  display: flex;
+  flex-direction: column;
+  margin: 20vh auto;
+  padding: 50px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgb(194, 192, 192);
+
+  .stake_submit {
+    background-color: black;
+  }
+
+  .max {
+    background-image: linear-gradient(to right, rgb(124, 121, 121), black);
   }
 }
