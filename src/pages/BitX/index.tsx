@@ -8,6 +8,7 @@ import dollarPot from '../../assets/img/dollarPot.png';
 import stake_reward_bg from '../../assets/img/stake_reward_bg.png';
 import arrow from '../../assets/img/arrow.png';
 // import { ModalCard } from './Modal';
+import Modal from 'react-modal'
 
 const BitXCard = () => {
   const [showModal, setshowModal] = useState(false);
